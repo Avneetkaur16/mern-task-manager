@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node app.js",
-    "build": "npm i"
+    "build": "npm install"
   },
   "author": "Avneet Kaur",
   "license": "ISC",

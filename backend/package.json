@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js",
-    "build": "npm install"
+    "start": "node app.js"
   },
   "author": "Avneet Kaur",
   "license": "ISC",

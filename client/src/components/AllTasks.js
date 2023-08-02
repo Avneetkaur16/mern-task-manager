@@ -14,7 +14,7 @@ const AllTasks = () => {
     
             try {
                 tasksDispatch({ type: "TASKS_START" });
-                const { data } = await axios.get('/all');
+                const { data } = await axios.get('/api/all');
                 tasksDispatch({ type: "TASKS_SUCCESS", payload: data });
                 
             } catch (error) {

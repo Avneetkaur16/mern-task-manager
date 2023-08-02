@@ -15,7 +15,7 @@ const TaskComponent = ({ taskP }) => {
 
   const handleDelete = async() => {
     try {
-      await axios.delete(`/task/${taskP._id}`)
+      await axios.delete(`/api/task/${taskP._id}`)
       navigate('/');
       
     } catch (error) {
@@ -26,7 +26,7 @@ const TaskComponent = ({ taskP }) => {
   const handleCheck = async(e) => {
     
     try {
-      const { data } = await axios.put(`/task/check/${taskP._id}`, { done: done ? false : true });
+      const { data } = await axios.put(`/api/task/check/${taskP._id}`, { done: done ? false : true });
 
       setTask(data)
       console.log(task);

@@ -21,7 +21,7 @@ const NewTask = () => {
     const handleSubmit = async(e) => {
 
         try {
-            const { data } = await axios.post('/api/create', newTask);
+            const { data } = await axios.post(`${process.env.REACT_APP_SERVER_URL}api/create`, newTask);
             console.log(data);
 
         } catch(error) {

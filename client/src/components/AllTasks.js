@@ -4,6 +4,7 @@ import { TasksContext } from '../context/tasksContext';
 import axios from 'axios';
 import './allTasks.css';
 
+
 const AllTasks = () => {
 
     const { loading, allTasks, tasksDispatch } = useContext(TasksContext);
@@ -14,7 +15,7 @@ const AllTasks = () => {
     
             try {
                 tasksDispatch({ type: "TASKS_START" });
-                const { data } = await axios.get('/api/all');
+                const { data } = await axios.get(`${process.env.REACT_APP_SERVER_URL}api/all`);
                 tasksDispatch({ type: "TASKS_SUCCESS", payload: data });
                 
             } catch (error) {

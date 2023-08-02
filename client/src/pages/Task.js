@@ -16,7 +16,7 @@ const Task = () => {
     const fetchTask = async() => {
       try {
         taskDispatch({ type: "TASK_START" });
-        const { data } = await axios.get(`/api/task/${id}`);
+        const { data } = await axios.get(`${process.env.REACT_APP_SERVER_URL}api/task/${id}`);
         taskDispatch({ type: "TASK_SUCCESS", payload: data });
         setUpdateTask(data);
         
@@ -41,7 +41,7 @@ const Task = () => {
 
   const handleSave = async() => {
     try {
-      const { data } = await axios.put(`/api/task/${task?._id}`, updateTask);
+      const { data } = await axios.put(`${process.env.REACT_APP_SERVER_URL}api/task/${task?._id}`, updateTask);
       setFlag((prev) => !prev)
       taskDispatch({ type: "TASK_SUCCESS", payload: data });
       

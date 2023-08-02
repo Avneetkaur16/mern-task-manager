@@ -1,0 +1,31 @@
+.all_main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items:center;
+    padding: 10px;
+}
+
+.all_header {
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px)  {
+    .all_header {
+        font-size: 25px;
+        padding: 3rem 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .all_header {
+        font-size: 25px;
+        padding: 2.2rem;
+    }
+}

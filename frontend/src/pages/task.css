@@ -1,0 +1,95 @@
+.task_header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task_main_page {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.task_input {
+    width: 80vw;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: rgb(248, 248, 248);
+}
+
+.task_input_date {
+    width: 40vw;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.task_edit {
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(12, 12, 255);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.task_save {
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(243, 0, 93);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.task_name {
+    font-size: 23px;
+}
+
+.task_desc {
+    font-size: 18px;
+    color: rgb(60, 60, 60);
+    font-weight: 600;
+}
+
+.task_date {
+    font-size: 16px;
+    color: rgb(30, 30, 30);
+}
+
+@media screen and (min-width: 768px) {
+    .task_main_page {
+        padding: 3rem;
+    }
+
+    .task_input {
+        width: 60vw;
+        height: 35px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .task_main_page {
+        padding: 4rem;
+    }
+
+    .task_input {
+        width: 45vw;
+    }
+
+    .task_input_date {
+        width: 15vw;
+    }
+}

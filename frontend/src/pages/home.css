@@ -1,0 +1,43 @@
+.home_header {
+    width: 100vw;
+    height: 13vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 100vw;
+}
+
+.home_footer {
+    width: 100vw;
+    height: 12vh;
+    background-color: rgb(225, 225, 225);
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_footer p {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(29, 29, 29);
+}
+
+@media screen and (min-width: 768px) {
+    .home_header {
+        height: 16vh;
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .home_header {
+        height: 18vh;
+        font-size: 30px;
+    }
+}

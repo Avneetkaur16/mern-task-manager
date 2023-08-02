@@ -35,7 +35,7 @@ const AllTasks = () => {
     <h2 className='all_header'>All Tasks</h2>
     <div className='all_main'>
         {loading ? <p>Loading Tasks... </p> : null}
-        {allTasks ? allTasks.map((task) => (
+        {allTasks ? allTasks?.map((task) => (
             <TaskComponent key={task._id} taskP={task} />   
         )) : (<p>Loading tasks...</p>)}
     
